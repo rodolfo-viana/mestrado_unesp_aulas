@@ -8,7 +8,8 @@
 typedef int TipoItem;
 
 // Estrutura da lista
-typedef struct {
+typedef struct
+{
     TipoItem itens[MAX];
     int tamanho;
 } Lista;
