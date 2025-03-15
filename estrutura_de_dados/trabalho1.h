@@ -8,10 +8,9 @@
 typedef int TipoItem;
 
 // Estrutura da lista
-typedef struct
-{
-    TipoItem itens[MAX];
-    int tamanho;
+typedef struct {
+  TipoItem itens[MAX];
+  int tamanho;
 } Lista;
 
 // Inicializa uma lista vazia
@@ -30,7 +29,8 @@ int tamanho_lista(Lista *l);
 int localizar_elemento(Lista *l, TipoItem item);
 
 // Acessa o elemento na posição especificada (posições de 0 a tamanho-1)
-// Se bem-sucedido, armazena o elemento em 'elemento' e retorna 1; caso contrário, retorna 0.
+// Se bem-sucedido, armazena o elemento em 'elemento' e retorna 1; caso
+// contrário, retorna 0.
 int acessar_elemento(Lista *l, int posicao, TipoItem *elemento);
 
 // Insere um elemento no final da lista
